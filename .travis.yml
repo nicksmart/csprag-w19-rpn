@@ -1,0 +1,13 @@
+# Install specific version of Python (3.5)
+language: python
+python:
+  - 3.5
+
+# Run the unit tests
+script:
+  - python -m unittest
+
+# Always test the master branch
+branches:
+  only:
+    - master
